@@ -10,10 +10,6 @@ const rotateTitle = () => {
     console.log(title);
 }
 
-const addHover = () => {
-    //nada xd
-}
-
 const changeTextofTitle = () => {
     let itemOne = document.querySelector('#listOfActions').firstElementChild;
     let title = document.getElementById('titleForActions');
@@ -27,7 +23,6 @@ const setBackgroundToTitle = () => {
 }
 const unsetBackgroundToTitle = () => {
     let title = document.getElementById('titleForActions');
-    // title.className.replace("orange", '')
     title.classList.remove('orange');
     console.log('Title without background!');
 }
@@ -38,17 +33,16 @@ const setColorTextToTitle = () => {
 }
 const rotateTextTitle = () => {
     let title = document.getElementById('titleForActions');
-    title.style.transform = 'rotate(90deg)';;
-    console.log('Title with rotate 90 degrees!');
+    title.style.transform = 'rotate(180deg)';;
+    console.log('Title with rotate 180 degrees!');
 }
 const unRotateTextTitle = () => {
     let title = document.getElementById('titleForActions');
-    title.classList.add('green');
+    title.style.transform = 'rotate(0deg)';;
     console.log('Title with rotate 0 degrees!');
 }
 
 const addEventListeners = () => {
-
 
     let list = document.getElementById('listOfActions');
     console.log(list);
@@ -59,8 +53,8 @@ const addEventListeners = () => {
     itemsList[1].addEventListener('mouseover', setBackgroundToTitle);
     itemsList[1].addEventListener('mouseout', unsetBackgroundToTitle);
     itemsList[2].addEventListener('dblclick', setColorTextToTitle);
-    itemsList[3].addEventListener('click', changeTextofTitle);
-    itemsList[3].addEventListener('dblclick', setColorTextToTitle);
+    itemsList[3].addEventListener('click', rotateTextTitle);
+    itemsList[3].addEventListener('dblclick', unRotateTextTitle);
 }
 
 /*
