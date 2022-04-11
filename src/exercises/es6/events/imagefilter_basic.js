@@ -1,8 +1,5 @@
 /* eslint-disable */
 // Image filter (basic)
-//Vamos a empezar esto de una vez por todas xxdddd
-//est0y en una programando en una cafertía wuuu en Greciaaaa!! JAJAJA
-//Siempre quise hacer esto, oh por Deos!
 
 window.onload = function() {
     console.log('Ready to Work!!');
@@ -23,18 +20,4 @@ const addTheEventListeners = () => {
         });
 
     });
-
-
 }
-
-
-
-// // select all buttons inside #buttongroup
-// const buttons = document.querySelectorAll('#buttongroup button');
-// console.log('buttons', buttons);
-
-// // loop over the buttons inside the NodeList
-// buttons.forEach(function (button, index) {
-//     // log information about every button
-//     console.log('button', index, button);
-// });
