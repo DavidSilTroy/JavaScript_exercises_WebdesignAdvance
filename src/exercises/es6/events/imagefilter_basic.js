@@ -6,28 +6,22 @@
 
 window.onload = function() {
     console.log('Ready to Work!!');
-    addEventListeners();
+    addTheEventListeners();
 };
 
-const setFilterClass = (element) => {
-    element.classList.add('grayscale');
-    console.log('Image with grayscale!');
-}
-const unsetFilterClass = (element) => {
-    element.classList.remove('grayscale');
-    console.log('Image without grayscale!');
-}
-
-const addEventListeners = () => {
+const addTheEventListeners = () => {
     console.log('Working!!');
     let list = document.querySelectorAll('#imagesForFilter div');
-    console.log(list);
+    // console.log(list);
     list.forEach((div) => {
-        console.log(div);
-        div.addEventListener('mouseover', div.classList.add('grayscale'));
-        div.addEventListener('mouseout', div.classList.remove('grayscale'));
-        // itemsList[1].addEventListener('mouseover', setBackgroundToTitle);
-        // itemsList[1].addEventListener('mouseout', unsetBackgroundToTitle);
+        // console.log(div);
+        div.addEventListener('mouseover', () => {
+            div.classList.add('grayscale');
+        });
+        div.addEventListener('mouseout', () => {
+            div.classList.remove('grayscale');
+        });
+
     });
 
 
