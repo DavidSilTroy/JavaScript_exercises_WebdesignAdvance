@@ -4,9 +4,9 @@ const score = ['Belgium', 'Spain', 'Spain', 'Belgium', 'Spain', 'Belgium', 'Belg
 
 const table = document.querySelector('table#soccer tbody');
 
-let dataTable = '';
-let belgiumScore = 0;
-let spainScore = 0;
+let dataTable = '',
+    belgiumScore = 0,
+    spainScore = 0;
 
 score.forEach((key) => {
     if (key == 'Belgium') {

@@ -1,13 +1,13 @@
 /* eslint-disable */
 // Even or odd?
 
-const evenContainer = document.querySelector('div#numbers div.border-green ul');
-const oddContainer = document.querySelector('div#numbers div.border-red ul');
-const primeContainer = document.querySelector('div#numbers div.border-blue ul');
+const evenContainer = document.querySelector('div#numbers div.border-green ul'),
+    oddContainer = document.querySelector('div#numbers div.border-red ul'),
+    primeContainer = document.querySelector('div#numbers div.border-blue ul');
 
-let evenToInner = '';
-let oddToInner = '';
-let primeToInner = '';
+let evenToInner = '',
+    oddToInner = '',
+    primeToInner = '';
 
 const isPrime = (num) => {
     for (var i = 2; i < num; i++)
